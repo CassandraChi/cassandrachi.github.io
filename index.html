@@ -1,35 +1,198 @@
-<section id="projects">
-  <h2>Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cassandra | Cybersecurity Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b011a;
+      --purple: #9b59b6;
+      --light-purple: #c084fc;
+      --text: #eee;
+    }
 
-  <div class="project">
-    <h3>Dark Web CTI Workstation <span class="status">in progress</span></h3>
-    <p>Safe, isolated workflow for triaging public dark‑web intel and producing curated IOCs for hunts.</p>
-  </div>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+    }
 
-  <div class="project">
-    <h3>Incident Response Simulation <span class="status">in progress</span></h3>
-    <p>Windows + Wazuh drill to build a timeline, detections, and a 1‑page IR report.</p>
-  </div>
+    header {
+      background: linear-gradient(90deg, #5b21b6, #9333ea);
+      padding: 1rem 2rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-  <div class="project">
-    <h3>Simulating & Investigating Incidents with NixGuard + Wazuh <span class="status">in progress</span></h3>
-    <p>Custom rules and investigation workflow; triage notes and tuning results.</p>
-  </div>
+    h1 {
+      margin: 0.2em 0;
+    }
 
-  <div class="project">
-    <h3>Vulnerability Assessment with Nessus & Nmap <span class="status">in progress</span></h3>
-    <p>Risk‑focused scan → prioritize → remediate → measure before/after.</p>
-  </div>
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
 
-  <div class="project">
-    <h3>Wazuh Integration with Imperva DAM <span class="status">in progress</span></h3>
-    <p>Ingest DAM logs, normalize, and alert on risky DB actions; dashboard + runbook.</p>
-  </div>
-</section>
+    section {
+      padding: 2rem 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:your@email">your@email</a><br>
-     LinkedIn: <a href="https://www.linkedin.com/in/yourname">linkedin.com/in/yourname</a><br>
-     GitHub: <a href="https://github.com/cassandrachi">github.com/cassandrachi</a></p>
-</section>
+    h2 {
+      color: var(--light-purple);
+      border-bottom: 2px solid var(--purple);
+      padding-bottom: 0.4rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "• ";
+      color: var(--light-purple);
+    }
+
+    a {
+      color: var(--light-purple);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #222;
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+      background: rgba(255,255,255,0.05);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .project a {
+      color: var(--purple);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a {
+      margin-right: 1rem;
+      color: var(--light-purple);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CassandraChi</h1>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <p>
+      Security Support Engineer with practical experience in Database Activity Monitoring (DAM) and enterprise security solutions. 
+      Currently expanding expertise in Cloud Security and Threat Intelligence through training and certifications. 
+      Passionate about building resilient, secure systems and continuously improving technical depth.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Competencies</h2>
+    <ul>
+      <li>Database Security: Imperva DAM, DRA</li>
+      <li>Cloud Security: AWS, Oracle</li>
+      <li>Vulnerability Assessment: Nessus, Nmap, InsightConnect</li>
+      <li>Cyber Threat Intelligence (CTI)</li>
+      <li>SIEM & Incident Response: InsightIDR, Wazuh, Splunk</li>
+      <li>IAM: Okta, JumpCloud</li>
+      <li>EDR: SentinelOne</li>
+      <li>DLP: Netskope</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Cybergirls Fellowship — Nov 2023</li>
+      <li>Digiss Internship — Apr 2024</li>
+      <li>CSN Bootcamp — Aug 2025</li>
+      <li>Blue Team Level 1 (Gold Coin)</li>
+      <li>Linux Essentials</li>
+      <li>AWS Cloud Practitioner</li>
+      <li>Oracle Foundations & AI Foundations</li>
+      <li>AWS Solutions Architect Associate — Expected 2026</li>
+      <li>CompTIA Security+ — Expected 2026</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <strong>Imperva DAM & AD Integration</strong><br>
+      Home lab integrating Imperva DAM with AD for role-based access control.<br>
+      <a href="https://shorturl.at/GurRx" target="_blank">View on Medium</a>
+    </div>
+
+    <div class="project">
+      <strong>Cloud Security & AWS Deployment</strong><br>
+      AWS IAM setup, ECS container deployment, VPC peering, S3 hosting with CloudFront + Route53.<br>
+      <a href="#">Project Page (Coming soon)</a>
+    </div>
+
+    <div class="project">
+      <strong>pfSense Firewall Setup</strong><br>
+      Configured NAT and firewall rules in VMware; verified with Wireshark.<br>
+      <a href="#">Project Page (Coming soon)</a>
+    </div>
+
+    <div class="project">
+      <strong>Incident Response Simulation (NixGuard / Wazuh)</strong><br>
+      Analyzed brute-force and malware attacks; produced IR report.<br>
+      <a href="https://shorturl.at/GurRx" target="_blank">View Report</a>
+    </div>
+
+    <div class="project">
+      <strong>CTI Dark Web Lab</strong><br>
+      Built an isolated workstation for dark web CTI; collected IoCs and integrated with EDR hunts.
+    </div>
+
+    <div class="project">
+      <strong>Vulnerability Assessment</strong><br>
+      Conducted scans using Nessus and Nmap; documented findings and remediation steps.
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:cassandra@example.com">Email</a>
+      🔗 <a href="#">LinkedIn</a>
+      ✍️ <a href="https://medium.com/@cassandra">Medium</a>
+      💻 <a href="https://github.com/CassandraChi">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 CassandraChi | Cybersecurity Portfolio
+  </footer>
+</body>
+</html>
