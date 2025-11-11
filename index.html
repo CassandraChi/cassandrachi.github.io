@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cassandra | Cybersecurity Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #0b011a;
@@ -13,7 +17,7 @@
     }
 
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Inter", sans-serif;
       background-color: var(--bg);
       color: var(--text);
       margin: 0;
@@ -30,13 +34,25 @@
 
     h1 {
       margin: 0.2em 0;
+      font-weight: 700;
+    }
+
+    nav {
+      margin-top: 0.5rem;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
+      margin: 0 0.8rem;
+      font-weight: 600;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--light-purple);
+      border-bottom: 2px solid var(--light-purple);
+      padding-bottom: 2px;
     }
 
     section {
@@ -91,63 +107,8 @@
       margin-right: 1rem;
       color: var(--light-purple);
     }
-  </style>
-</head>
 
-<body>
-  <header>
-    <h1>Cassandra Chibueze</h1>
-    <nav>
-      <a href="#profile">Profile</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="profile">
-    <h2>Profile</h2>
-    <p>
-      Cybersecurity Engineer with practical experience in Database Activity Monitoring (DAM) and enterprise security solutions. 
-      Currently expanding expertise in Cloud Security and Threat Intelligence through training and certifications. 
-      Passionate about building resilient, secure systems and continuously improving technical depth.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills & Competencies</h2>
-    <ul>
-      <li>Database Security: Imperva DAM, DRA</li>
-      <li>Cloud Security: AWS, Oracle</li>
-      <li>Vulnerability Assessment: Nessus, Nmap, InsightConnect</li>
-      <li>Cyber Threat Intelligence (CTI)</li>
-      <li>SIEM & Incident Response: InsightIDR, Wazuh, Splunk</li>
-      <li>IAM: Okta, JumpCloud</li>
-      <li>EDR: SentinelOne</li>
-      <li>DLP: Netskope</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cybergirls Fellowship — Nov 2023</li>
-      <li>Digiss Internship — Apr 2024</li>
-      <li>CSN Bootcamp — Aug 2025</li>
-      <li>Blue Team Level 1 (Gold Coin)</li>
-      <li>Linux Essentials</li>
-      <li>AWS Cloud Practitioner</li>
-      <li>Oracle Foundations & AI Foundations</li>
-      <li>AWS Solutions Architect Associate — Expected 2026</li>
-      <li>CompTIA Security+ — Expected 2026</li>
-    </ul>
-  </section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <style>
-    /* Inline styles scoped to projects section for easy copy/paste */
+    /* Domain accordion styling (Projects section) */
     .domains { display: grid; gap: 1rem; }
     .domain {
       background: rgba(255,255,255,0.03);
@@ -198,176 +159,170 @@
     .chev { opacity: 0.9; transform: rotate(0deg); transition: transform 200ms ease; }
     .chev.open { transform: rotate(90deg); }
   </style>
+</head>
 
-  <div class="domains">
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Cassandra Chibueze</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="https://medium.com/@cassandra" target="_blank" rel="noopener">Tech Articles</a>
+      <a href="#awareness">Cyber Awareness</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Database Security -->
-    <div class="domain">
-      <button class="domain-button" data-target="dbsec">
-        Database Security
-        <span class="chev">▶</span>
-      </button>
-      <div id="dbsec" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">Imperva DAM & AD Integration</div>
-          <div class="project-desc">Home-lab integrating Imperva DAM with Active Directory for RBAC and identity sourcing.</div>
-          <a class="project-link" href="https://shorturl.at/GurRx" target="_blank" rel="noopener">View on Medium</a>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Cybersecurity Engineer with hands-on experience in Database Activity Monitoring (DAM), cloud infrastructure security, and enterprise defense tools.
+      Continuously expanding expertise in Cloud Security, Threat Intelligence, and Incident Response. 
+      Passionate about creating secure systems, mentoring peers, and contributing to cybersecurity awareness.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills & Competencies</h2>
+    <ul>
+      <li>Database Security: Imperva DAM, DRA</li>
+      <li>Cloud Security: AWS, Oracle</li>
+      <li>Vulnerability Assessment: Nessus, Nmap, InsightConnect</li>
+      <li>Cyber Threat Intelligence (CTI)</li>
+      <li>SIEM & Incident Response: InsightIDR, Wazuh, Splunk</li>
+      <li>IAM: Okta, JumpCloud</li>
+      <li>EDR: SentinelOne</li>
+      <li>DLP: Netskope</li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Coming soon — highlights of professional and project-based cybersecurity experience.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="domains">
+
+      <!-- Database Security -->
+      <div class="domain">
+        <button class="domain-button" data-target="dbsec">
+          Database Security
+          <span class="chev">▶</span>
+        </button>
+        <div id="dbsec" class="domain-content" aria-hidden="true">
+          <div class="project-item">
+            <div class="project-title">Imperva DAM & AD Integration</div>
+            <div class="project-desc">Home-lab integrating Imperva DAM with Active Directory for RBAC and identity sourcing.</div>
+            <a class="project-link" href="https://shorturl.at/GurRx" target="_blank" rel="noopener">View on Medium</a>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">DAM Deployment Playbook (Lab)</div>
+            <div class="project-desc">Step-by-step deployment notes, hardening checklist and screenshots. (Coming soon)</div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
+          </div>
         </div>
+      </div>
 
-        <div class="project-item">
-          <div class="project-title">DAM Deployment Playbook (Lab)</div>
-          <div class="project-desc">Step-by-step deployment notes, hardening checklist and screenshots. (Coming soon)</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
+      <!-- Cloud Security -->
+      <div class="domain">
+        <button class="domain-button" data-target="cloudsec">
+          Cloud Security
+          <span class="chev">▶</span>
+        </button>
+        <div id="cloudsec" class="domain-content" aria-hidden="true">
+          <div class="project-item">
+            <div class="project-title">Cloud Security & AWS Deployment</div>
+            <div class="project-desc">IAM, VPC design, ECS containers, RDS integration, S3 + CloudFront hosting.</div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title">Cloud Monitoring & Dashboards</div>
+            <div class="project-desc">CloudWatch dashboards and alerting for ECS workloads and RDS metrics.</div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Incident Response -->
+      <div class="domain">
+        <button class="domain-button" data-target="ir">
+          Incident Response
+          <span class="chev">▶</span>
+        </button>
+        <div id="ir" class="domain-content" aria-hidden="true">
+          <div class="project-item">
+            <div class="project-title">Incident Response Simulation (NixGuard / Wazuh)</div>
+            <div class="project-desc">Simulated detection and IR — brute-force and malware alerts, containment and remediation plans.</div>
+            <a class="project-link" href="https://shorturl.at/GurRx" target="_blank" rel="noopener">View Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTI -->
+      <div class="domain">
+        <button class="domain-button" data-target="cti">
+          Cyber Threat Intelligence (CTI)
+          <span class="chev">▶</span>
+        </button>
+        <div id="cti" class="domain-content" aria-hidden="true">
+          <div class="project-item">
+            <div class="project-title">CTI Dark Web Lab</div>
+            <div class="project-desc">Isolated dark web workstation, IoC collection and ingestion into EDR hunting workflows.</div>
+            <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Cloud Security -->
-    <div class="domain">
-      <button class="domain-button" data-target="cloudsec">
-        Cloud Security
-        <span class="chev">▶</span>
-      </button>
-      <div id="cloudsec" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">Cloud Security & AWS Deployment</div>
-          <div class="project-desc">IAM, VPC design (public/private subnets), ECS containers, RDS integration, S3 + CloudFront hosting.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-
-        <div class="project-item">
-          <div class="project-title">Cloud Monitoring & Dashboards</div>
-          <div class="project-desc">CloudWatch dashboards and alerting for ECS workloads and RDS metrics.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Network Security -->
-    <div class="domain">
-      <button class="domain-button" data-target="netsec">
-        Network Security
-        <span class="chev">▶</span>
-      </button>
-      <div id="netsec" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">pfSense Firewall Setup</div>
-          <div class="project-desc">NAT and firewall rules to secure LAN–WAN traffic in a VMware lab; packet captures and verification via Wireshark.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-
-        <div class="project-item">
-          <div class="project-title">Lab Network Segmentation</div>
-          <div class="project-desc">Design and implement VLANs and ACLs for segmented lab networks.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Incident Response -->
-    <div class="domain">
-      <button class="domain-button" data-target="ir">
-        Incident Response
-        <span class="chev">▶</span>
-      </button>
-      <div id="ir" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">Incident Response Simulation (NixGuard / Wazuh)</div>
-          <div class="project-desc">Simulated detection and IR — brute-force and malware alerts, containment and remediation plans.</div>
-          <a class="project-link" href="https://shorturl.at/GurRx" target="_blank" rel="noopener">View Report</a>
-        </div>
-
-        <div class="project-item">
-          <div class="project-title">IR Playbook & Evidence Collection</div>
-          <div class="project-desc">Forensic notes, PCAP analysis and recommended containment steps.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTI -->
-    <div class="domain">
-      <button class="domain-button" data-target="cti">
-        Cyber Threat Intelligence (CTI)
-        <span class="chev">▶</span>
-      </button>
-      <div id="cti" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">CTI Dark Web Lab</div>
-          <div class="project-desc">Isolated dark web workstation, IoC collection and ingestion into EDR hunting workflows.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-        <div class="project-item">
-          <div class="project-title">IoC to EDR Ingestion Demo</div>
-          <div class="project-desc">Examples of using CTI to drive EDR hunts with sample indicators.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Vulnerability Assessment -->
-    <div class="domain">
-      <button class="domain-button" data-target="vuln">
-        Vulnerability Assessment
-        <span class="chev">▶</span>
-      </button>
-      <div id="vuln" class="domain-content" aria-hidden="true">
-        <div class="project-item">
-          <div class="project-title">Vulnerability Scanning (Nessus / Nmap)</div>
-          <div class="project-desc">Scans, prioritized findings and remediation recommendations with sample reports.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-        <div class="project-item">
-          <div class="project-title">Pentest Ops Notes</div>
-          <div class="project-desc">Methodology and repeatable scan profiles for blue/red team exercises.</div>
-          <a class="project-link" href="#" target="_blank" rel="noopener">Project Page</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-    // Toggle behavior for domain accordions
-    document.querySelectorAll('.domain-button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetId = btn.getAttribute('data-target');
-        const content = document.getElementById(targetId);
-        const chev = btn.querySelector('.chev');
-
-        // Toggle open class and animate max-height
-        const isOpen = content.classList.contains('open');
-        if (isOpen) {
-          content.style.maxHeight = null;
-          content.classList.remove('open');
-          content.setAttribute('aria-hidden', 'true');
-          chev.classList.remove('open');
-        } else {
-          // close any other open content (optional single-open behavior)
-          document.querySelectorAll('.domain-content.open').forEach(openEl => {
-            openEl.style.maxHeight = null;
-            openEl.classList.remove('open');
-            openEl.setAttribute('aria-hidden', 'true');
-            const openBtn = document.querySelector('[data-target="' + openEl.id + '"]');
-            if (openBtn) openBtn.querySelector('.chev').classList.remove('open');
-          });
-
-          content.classList.add('open');
-          content.setAttribute('aria-hidden', 'false');
-          chev.classList.add('open');
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
+    <script>
+      document.querySelectorAll('.domain-button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const content = document.getElementById(targetId);
+          const chev = btn.querySelector('.chev');
+          const isOpen = content.classList.contains('open');
+          if (isOpen) {
+            content.style.maxHeight = null;
+            content.classList.remove('open');
+            chev.classList.remove('open');
+          } else {
+            document.querySelectorAll('.domain-content.open').forEach(openEl => {
+              openEl.style.maxHeight = null;
+              openEl.classList.remove('open');
+              const openBtn = document.querySelector('[data-target="' + openEl.id + '"]');
+              if (openBtn) openBtn.querySelector('.chev').classList.remove('open');
+            });
+            content.classList.add('open');
+            chev.classList.add('open');
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
       });
-    });
+    </script>
+  </section>
 
-    // Optional: expand first domain on page load
-    window.addEventListener('load', () => {
-      const firstBtn = document.querySelector('.domain-button');
-      if (firstBtn) firstBtn.click();
-    });
-  </script>
-</section>
+  <!-- CYBER AWARENESS -->
+  <section id="awareness">
+    <h2>Cyber Awareness</h2>
+    <p>
+      Volunteer-driven cybersecurity awareness initiatives — including talks, video posts, and campaigns during Cybersecurity Awareness Month.<br>
+      <a href="https://linkedin.com/in/cassandrachi" target="_blank" rel="noopener">View Awareness Campaigns on LinkedIn</a>
+    </p>
+  </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>
