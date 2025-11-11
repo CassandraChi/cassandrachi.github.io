@@ -205,136 +205,96 @@
 <section id="experience">
   <h2>Experience</h2>
 
-  <style>
-    /* Match your site's color scheme */
-    #experience {
-      padding: 2rem 10%;
-      color: var(--text);
-    }
+  <div class="domains">
 
-    .exp-entry {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-left: 4px solid var(--purple);
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      padding: 1rem 1.5rem;
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-
-    .exp-entry:hover {
-      background: rgba(255, 255, 255, 0.07);
-      border-color: var(--light-purple);
-    }
-
-    .exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      font-weight: 600;
-      color: var(--light-purple);
-      font-size: 1.1rem;
-    }
-
-    .exp-header span {
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-
-    .exp-details {
-      display: none;
-      margin-top: 0.8rem;
-    }
-
-    .exp-details ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .exp-details li {
-      margin-bottom: 0.5rem;
-      position: relative;
-      padding-left: 1.2rem;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
-    .exp-details li::before {
-      content: "•";
-      color: var(--light-purple);
-      position: absolute;
-      left: 0;
-    }
-
-    .exp-entry.open .exp-details {
-      display: block;
-    }
-
-    .arrow {
-      transition: transform 0.3s ease;
-    }
-
-    .exp-entry.open .arrow {
-      transform: rotate(90deg);
-    }
-  </style>
-
-  <div class="exp-entry">
-    <div class="exp-header" onclick="toggleExp(this)">
-      Tenece Professional Services <span>(May 2024 – Present)</span>
-      <span class="arrow">▶</span>
+    <!-- Tenece -->
+    <div class="domain">
+      <button class="domain-button" data-target="tenece">
+        Tenece Professional Services
+        <span class="chev">▶</span>
+      </button>
+      <div id="tenece" class="domain-content" aria-hidden="true">
+        <div class="project-item">
+          <div class="project-title">Enterprise Security Support Engineer | May 2024 – Present</div>
+          <ul>
+            <li>Supported Imperva DAM installation, gateway setup, agent configuration, database onboarding, policy creation, and report setup for enterprise clients.</li>
+            <li>Performed SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
+            <li>Handled upgrades, patching, and troubleshooting for DAM components (MX, Gateway, Agent).</li>
+            <li>Deployed Imperva DRA (Admin & Analytics Server, AD integration, SSL, and DAM audit data integration).</li>
+            <li>Supported Linux and Windows environments, including agent upgrades, NFS/FTP mounts, and GUI troubleshooting.</li>
+            <li>Collaborated on SIEM integration for centralized log monitoring and analytics.</li>
+            <li>Created internal knowledge base articles to improve support efficiency and onboarding.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="exp-details">
-      <ul>
-        <li>Supported Imperva DAM installation, gateway setup, agent configuration, database onboarding, policy creation, and report setup for enterprise clients.</li>
-        <li>Performed SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
-        <li>Handled upgrades, patching, and troubleshooting for DAM components (MX, Gateway, Agent).</li>
-        <li>Deployed Imperva DRA (Admin & Analytics Server, AD integration, SSL, and DAM audit data integration).</li>
-        <li>Supported Linux and Windows environments, including agent upgrades, NFS/FTP mounts, and GUI troubleshooting.</li>
-        <li>Collaborated on SIEM integration for centralized log monitoring and analytics.</li>
-        <li>Created internal knowledge base articles to improve support efficiency and onboarding.</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="exp-entry">
-    <div class="exp-header" onclick="toggleExp(this)">
-      Digiss, San Antonio, TX <span>(Jan 2024 – Apr 2024)</span>
-      <span class="arrow">▶</span>
+    <!-- Digiss -->
+    <div class="domain">
+      <button class="domain-button" data-target="digiss">
+        Digiss, San Antonio, TX
+        <span class="chev">▶</span>
+      </button>
+      <div id="digiss" class="domain-content" aria-hidden="true">
+        <div class="project-item">
+          <div class="project-title">Cybersecurity Intern | Jan 2024 – Apr 2024</div>
+          <ul>
+            <li>Completed a 14-week program covering IAM, Cloud Security, GRC, Threat Intelligence, and Security Monitoring.</li>
+            <li>Participated in 24/7 SOC operations detecting and responding to security incidents.</li>
+            <li>Investigated incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
+            <li>Built a dark web CTI workstation improving monitoring efficiency by 80%.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="exp-details">
-      <ul>
-        <li>Completed a 14-week program covering IAM, Cloud Security, GRC, Threat Intelligence, and Security Monitoring.</li>
-        <li>Participated in 24/7 SOC operations detecting and responding to security incidents.</li>
-        <li>Investigated incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
-        <li>Built a dark web CTI workstation improving monitoring efficiency by 80%.</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="exp-entry">
-    <div class="exp-header" onclick="toggleExp(this)">
-      Cybergirls Fellowship <span>(Mar 2023 – Nov 2023)</span>
-      <span class="arrow">▶</span>
+    <!-- Cybergirls -->
+    <div class="domain">
+      <button class="domain-button" data-target="cybergirls">
+        Cybergirls Fellowship
+        <span class="chev">▶</span>
+      </button>
+      <div id="cybergirls" class="domain-content" aria-hidden="true">
+        <div class="project-item">
+          <div class="project-title">SOC Analyst Tier 1 Trainee | Mar 2023 – Nov 2023</div>
+          <ul>
+            <li>Performed incident response analysis using digital forensic tools and threat intelligence sources.</li>
+            <li>Prepared comprehensive incident reports with remediation recommendations.</li>
+            <li>Analyzed phishing emails and attachments.</li>
+            <li>Used SIEM tools for threat investigation and correlation.</li>
+            <li>Conducted network traffic analysis to identify malware infections.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="exp-details">
-      <ul>
-        <li>Performed incident response analysis using digital forensic tools and threat intelligence sources.</li>
-        <li>Prepared comprehensive incident reports with remediation recommendations.</li>
-        <li>Analyzed phishing emails and attachments.</li>
-        <li>Used SIEM tools for threat investigation and correlation.</li>
-        <li>Conducted network traffic analysis to identify malware infections.</li>
-      </ul>
-    </div>
+
   </div>
 
   <script>
-    function toggleExp(el) {
-      const parent = el.parentElement;
-      parent.classList.toggle("open");
-    }
+    document.querySelectorAll('#experience .domain-button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const content = document.getElementById(targetId);
+        const chev = btn.querySelector('.chev');
+        const isOpen = content.classList.contains('open');
+
+        if (isOpen) {
+          content.style.maxHeight = null;
+          content.classList.remove('open');
+          chev.classList.remove('open');
+        } else {
+          document.querySelectorAll('#experience .domain-content.open').forEach(openEl => {
+            openEl.style.maxHeight = null;
+            openEl.classList.remove('open');
+            const openBtn = document.querySelector('[data-target="' + openEl.id + '"]');
+            if (openBtn) openBtn.querySelector('.chev').classList.remove('open');
+          });
+          content.classList.add('open');
+          chev.classList.add('open');
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
   </script>
 </section>
 
