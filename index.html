@@ -202,102 +202,138 @@
   </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" style="margin-top: 60px; padding: 20px;">
+<section id="experience">
   <h2>Experience</h2>
 
   <style>
-    .experience-item {
-      margin-bottom: 20px;
-      border-left: 3px solid #4f46e5;
-      padding-left: 15px;
-      transition: all 0.3s ease-in-out;
+    /* Match your site's color scheme */
+    #experience {
+      padding: 2rem 10%;
+      color: var(--text);
     }
 
-    .experience-item h3 {
-      font-size: 1.2rem;
-      color: #111827;
-      cursor: pointer;
+    .exp-entry {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-left: 4px solid var(--purple);
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.5rem;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .exp-entry:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--light-purple);
+    }
+
+    .exp-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--light-purple);
+      font-size: 1.1rem;
     }
 
-    .experience-item h3 span {
-      font-weight: normal;
-      color: #6b7280;
+    .exp-header span {
       font-size: 0.9rem;
+      color: #bbb;
     }
 
-    .experience-content {
-      list-style: disc;
-      margin-left: 20px;
-      color: #374151;
-      line-height: 1.6;
+    .exp-details {
       display: none;
-      margin-top: 10px;
+      margin-top: 0.8rem;
     }
 
-    .experience-item.active .experience-content {
+    .exp-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .exp-details li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.2rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .exp-details li::before {
+      content: "•";
+      color: var(--light-purple);
+      position: absolute;
+      left: 0;
+    }
+
+    .exp-entry.open .exp-details {
       display: block;
     }
 
     .arrow {
-      font-size: 0.9rem;
       transition: transform 0.3s ease;
     }
 
-    .experience-item.active .arrow {
+    .exp-entry.open .arrow {
       transform: rotate(90deg);
     }
   </style>
 
-  <div class="experience-item">
-    <h3 onclick="toggleExperience(this)">
+  <div class="exp-entry">
+    <div class="exp-header" onclick="toggleExp(this)">
       Tenece Professional Services <span>(May 2024 – Present)</span>
       <span class="arrow">▶</span>
-    </h3>
-    <ul class="experience-content">
-      <li>Supported Imperva DAM installation, gateway setup, agent configuration, database onboarding, policy creation, and report setup for enterprise clients.</li>
-      <li>Performed SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
-      <li>Handled upgrades, patching, and troubleshooting for DAM components (MX, Gateway, Agent).</li>
-      <li>Deployed Imperva DRA (Admin & Analytics Server, AD integration, SSL, and DAM audit data integration).</li>
-      <li>Supported Linux and Windows environments, including agent upgrades, NFS/FTP mounts, and GUI troubleshooting.</li>
-      <li>Collaborated on SIEM integration for centralized log monitoring and analytics.</li>
-      <li>Created internal knowledge base articles to improve support efficiency and onboarding.</li>
-    </ul>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Supported Imperva DAM installation, gateway setup, agent configuration, database onboarding, policy creation, and report setup for enterprise clients.</li>
+        <li>Performed SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
+        <li>Handled upgrades, patching, and troubleshooting for DAM components (MX, Gateway, Agent).</li>
+        <li>Deployed Imperva DRA (Admin & Analytics Server, AD integration, SSL, and DAM audit data integration).</li>
+        <li>Supported Linux and Windows environments, including agent upgrades, NFS/FTP mounts, and GUI troubleshooting.</li>
+        <li>Collaborated on SIEM integration for centralized log monitoring and analytics.</li>
+        <li>Created internal knowledge base articles to improve support efficiency and onboarding.</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="experience-item">
-    <h3 onclick="toggleExperience(this)">
+  <div class="exp-entry">
+    <div class="exp-header" onclick="toggleExp(this)">
       Digiss, San Antonio, TX <span>(Jan 2024 – Apr 2024)</span>
       <span class="arrow">▶</span>
-    </h3>
-    <ul class="experience-content">
-      <li>Completed a 14-week program covering IAM, Cloud Security, GRC, Threat Intelligence, and Security Monitoring.</li>
-      <li>Participated in 24/7 SOC operations detecting and responding to security incidents.</li>
-      <li>Investigated incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
-      <li>Built a dark web CTI workstation improving monitoring efficiency by 80%.</li>
-    </ul>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Completed a 14-week program covering IAM, Cloud Security, GRC, Threat Intelligence, and Security Monitoring.</li>
+        <li>Participated in 24/7 SOC operations detecting and responding to security incidents.</li>
+        <li>Investigated incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
+        <li>Built a dark web CTI workstation improving monitoring efficiency by 80%.</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="experience-item">
-    <h3 onclick="toggleExperience(this)">
+  <div class="exp-entry">
+    <div class="exp-header" onclick="toggleExp(this)">
       Cybergirls Fellowship <span>(Mar 2023 – Nov 2023)</span>
       <span class="arrow">▶</span>
-    </h3>
-    <ul class="experience-content">
-      <li>Performed incident response analysis using digital forensic tools and threat intelligence sources.</li>
-      <li>Prepared comprehensive incident reports with remediation recommendations.</li>
-      <li>Analyzed phishing emails and attachments.</li>
-      <li>Used SIEM tools for threat investigation and correlation.</li>
-      <li>Conducted network traffic analysis to identify malware infections.</li>
-    </ul>
+    </div>
+    <div class="exp-details">
+      <ul>
+        <li>Performed incident response analysis using digital forensic tools and threat intelligence sources.</li>
+        <li>Prepared comprehensive incident reports with remediation recommendations.</li>
+        <li>Analyzed phishing emails and attachments.</li>
+        <li>Used SIEM tools for threat investigation and correlation.</li>
+        <li>Conducted network traffic analysis to identify malware infections.</li>
+      </ul>
+    </div>
   </div>
 
   <script>
-    function toggleExperience(element) {
-      const item = element.parentElement;
-      item.classList.toggle("active");
+    function toggleExp(el) {
+      const parent = el.parentElement;
+      parent.classList.toggle("open");
     }
   </script>
 </section>
