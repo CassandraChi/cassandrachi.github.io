@@ -205,15 +205,15 @@
 <section id="experience">
   <h2>Experience</h2>
 
-  <div class="domains">
+  <div class="exp-domains">
 
     <!-- Tenece -->
-    <div class="domain">
-      <button class="domain-button" data-target="tenece">
+    <div class="exp-domain">
+      <button class="exp-button" data-target="exp-tenece">
         Tenece Professional Services
         <span class="chev">▶</span>
       </button>
-      <div id="tenece" class="domain-content" aria-hidden="true">
+      <div id="exp-tenece" class="exp-content" aria-hidden="true">
         <div class="project-item">
           <div class="project-title">Enterprise Security Support Engineer | May 2024 – Present</div>
           <ul>
@@ -230,12 +230,12 @@
     </div>
 
     <!-- Digiss -->
-    <div class="domain">
-      <button class="domain-button" data-target="digiss">
+    <div class="exp-domain">
+      <button class="exp-button" data-target="exp-digiss">
         Digiss, San Antonio, TX
         <span class="chev">▶</span>
       </button>
-      <div id="digiss" class="domain-content" aria-hidden="true">
+      <div id="exp-digiss" class="exp-content" aria-hidden="true">
         <div class="project-item">
           <div class="project-title">Cybersecurity Intern | Jan 2024 – Apr 2024</div>
           <ul>
@@ -249,12 +249,12 @@
     </div>
 
     <!-- Cybergirls -->
-    <div class="domain">
-      <button class="domain-button" data-target="cybergirls">
+    <div class="exp-domain">
+      <button class="exp-button" data-target="exp-cybergirls">
         Cybergirls Fellowship
         <span class="chev">▶</span>
       </button>
-      <div id="cybergirls" class="domain-content" aria-hidden="true">
+      <div id="exp-cybergirls" class="exp-content" aria-hidden="true">
         <div class="project-item">
           <div class="project-title">SOC Analyst Tier 1 Trainee | Mar 2023 – Nov 2023</div>
           <ul>
@@ -271,7 +271,7 @@
   </div>
 
   <script>
-    document.querySelectorAll('#experience .domain-button').forEach(btn => {
+    document.querySelectorAll('.exp-button').forEach(btn => {
       btn.addEventListener('click', () => {
         const targetId = btn.getAttribute('data-target');
         const content = document.getElementById(targetId);
@@ -283,7 +283,7 @@
           content.classList.remove('open');
           chev.classList.remove('open');
         } else {
-          document.querySelectorAll('#experience .domain-content.open').forEach(openEl => {
+          document.querySelectorAll('.exp-content.open').forEach(openEl => {
             openEl.style.maxHeight = null;
             openEl.classList.remove('open');
             const openBtn = document.querySelector('[data-target="' + openEl.id + '"]');
