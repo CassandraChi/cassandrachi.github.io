@@ -202,46 +202,104 @@
   </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" style="margin-top: 60px; padding: 20px;">
   <h2>Experience</h2>
 
+  <style>
+    .experience-item {
+      margin-bottom: 20px;
+      border-left: 3px solid #4f46e5;
+      padding-left: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .experience-item h3 {
+      font-size: 1.2rem;
+      color: #111827;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .experience-item h3 span {
+      font-weight: normal;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .experience-content {
+      list-style: disc;
+      margin-left: 20px;
+      color: #374151;
+      line-height: 1.6;
+      display: none;
+      margin-top: 10px;
+    }
+
+    .experience-item.active .experience-content {
+      display: block;
+    }
+
+    .arrow {
+      font-size: 0.9rem;
+      transition: transform 0.3s ease;
+    }
+
+    .experience-item.active .arrow {
+      transform: rotate(90deg);
+    }
+  </style>
+
   <div class="experience-item">
-    <h3>Tenece Professional Services <span>(May 2024 – Present)</span></h3>
-    <p><strong>Position:</strong> Enterprise Security Support Engineer</p>
-    <ul>
-      <li>Supported Imperva DAM by handling installation, gateway setup, agent configuration, database onboarding, policy configuration, and report setup for enterprise clients.</li>
-      <li>Performed DAM deployment tasks including SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
-      <li>Assisted in upgrades, patching, and troubleshooting of DAM components (MX, Gateway, Agent), ensuring high system availability.</li>
-      <li>Gained exposure to Imperva DRA deployment, Admin & Analytics Server setup, and integration with DAM for audit data collection.</li>
-      <li>Performed Linux and Windows support tasks including agent installation, archive mounting (NFS/FTP), partition management, and GUI troubleshooting.</li>
-      <li>Collaborated on SIEM integration projects, improving centralized log monitoring and security analytics.</li>
-      <li>Built and maintained a knowledge base of recurring support tasks to improve efficiency and onboarding.</li>
+    <h3 onclick="toggleExperience(this)">
+      Tenece Professional Services <span>(May 2024 – Present)</span>
+      <span class="arrow">▶</span>
+    </h3>
+    <ul class="experience-content">
+      <li>Supported Imperva DAM installation, gateway setup, agent configuration, database onboarding, policy creation, and report setup for enterprise clients.</li>
+      <li>Performed SSL certificate installation and Active Directory integration for secure authentication and compliance.</li>
+      <li>Handled upgrades, patching, and troubleshooting for DAM components (MX, Gateway, Agent).</li>
+      <li>Deployed Imperva DRA (Admin & Analytics Server, AD integration, SSL, and DAM audit data integration).</li>
+      <li>Supported Linux and Windows environments, including agent upgrades, NFS/FTP mounts, and GUI troubleshooting.</li>
+      <li>Collaborated on SIEM integration for centralized log monitoring and analytics.</li>
+      <li>Created internal knowledge base articles to improve support efficiency and onboarding.</li>
     </ul>
   </div>
 
   <div class="experience-item">
-    <h3>Digiss, San Antonio, TX <span>(Jan 2024 – Apr 2024)</span></h3>
-    <p><strong>Position:</strong> Cybersecurity Intern</p>
-    <ul>
-      <li>Completed a 14-week program covering IAM, Cloud Security, Application Security, GRC, Threat Intelligence, and Security Monitoring.</li>
-      <li>Participated in 24/7 SOC operations, detecting and responding to security incidents alongside senior analysts.</li>
-      <li>Investigated real incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
-      <li>Built a dark web CTI workstation and SOP, improving monitoring efficiency by 80% and enhancing IoC-based threat hunting.</li>
+    <h3 onclick="toggleExperience(this)">
+      Digiss, San Antonio, TX <span>(Jan 2024 – Apr 2024)</span>
+      <span class="arrow">▶</span>
+    </h3>
+    <ul class="experience-content">
+      <li>Completed a 14-week program covering IAM, Cloud Security, GRC, Threat Intelligence, and Security Monitoring.</li>
+      <li>Participated in 24/7 SOC operations detecting and responding to security incidents.</li>
+      <li>Investigated incidents following SOPs, maintaining MTTD/MTTR within SLAs.</li>
+      <li>Built a dark web CTI workstation improving monitoring efficiency by 80%.</li>
     </ul>
   </div>
 
   <div class="experience-item">
-    <h3>Cybergirls Fellowship <span>(Mar 2023 – Nov 2023)</span></h3>
-    <p><strong>Position:</strong> SOC Analyst (Tier 1 Trainee)</p>
-    <ul>
-      <li>Conducted incident response analysis using digital forensic tools and threat intelligence sources to identify and contain malicious activity.</li>
-      <li>Prepared comprehensive incident reports with effective remediation recommendations.</li>
-      <li>Performed phishing email and attachment analysis.</li>
-      <li>Used SIEM platforms to investigate and track malicious activity.</li>
-      <li>Analyzed network traffic and identified malware infections.</li>
+    <h3 onclick="toggleExperience(this)">
+      Cybergirls Fellowship <span>(Mar 2023 – Nov 2023)</span>
+      <span class="arrow">▶</span>
+    </h3>
+    <ul class="experience-content">
+      <li>Performed incident response analysis using digital forensic tools and threat intelligence sources.</li>
+      <li>Prepared comprehensive incident reports with remediation recommendations.</li>
+      <li>Analyzed phishing emails and attachments.</li>
+      <li>Used SIEM tools for threat investigation and correlation.</li>
+      <li>Conducted network traffic analysis to identify malware infections.</li>
     </ul>
   </div>
 
+  <script>
+    function toggleExperience(element) {
+      const item = element.parentElement;
+      item.classList.toggle("active");
+    }
+  </script>
 </section>
 
   <!-- PROJECTS -->
