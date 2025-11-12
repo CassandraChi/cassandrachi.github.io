@@ -479,18 +479,35 @@
 <section id="contact" class="contact">
   <h2>Contact</h2>
   <p class="contact-links">
-    ✍️ <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener">Medium</a> |
-    🔗 <a href="https://www.linkedin.com/in/cassandra-chibueze/" target="_blank" rel="noopener">LinkedIn</a> |
-    📧 <a href="mailto:Cassandrachibueze1@gmail.com">Email</a>
+    <span class="icon">✍️</span> <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener">Medium</a> |
+    <span class="icon">🔗</span> <a href="https://www.linkedin.com/in/cassandra-chibueze/" target="_blank" rel="noopener">LinkedIn</a> |
+    <span class="icon">📧</span> <a href="mailto:Cassandrachibueze1@gmail.com">Email</a>
   </p>
 
   <style>
+    :root {
+      --header-purple: #c084fc;
+      --header-purple-hover: #a16dff;
+    }
+
+    #contact {
+      text-align: center;
+      margin-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    #contact h2 {
+      color: var(--header-purple);
+      font-size: 1.8rem;
+    }
+
     .contact-links {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 0.5em;
       font-weight: 500;
+      color: var(--header-purple);
     }
 
     .contact-links a {
@@ -500,11 +517,16 @@
     }
 
     .contact-links a:hover {
-      color: #a16dff;
+      color: var(--header-purple-hover);
       text-decoration: underline;
+    }
+
+    .contact-links .icon {
+      color: var(--header-purple);
     }
   </style>
 </section>
+
 
   <footer>
     © 2025 CassandraChi | Cybersecurity Portfolio
