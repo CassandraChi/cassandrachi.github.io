@@ -479,7 +479,7 @@
 </section>
 
 <style>
-  /* Make awareness section look neat */
+  /* Awareness section */
   .awareness-links {
     list-style: none;
     padding-left: 0;
@@ -490,14 +490,14 @@
   }
 
   .awareness-links a {
-    color: #007acc;
+    color: #7e3ff2; /* purple tone */
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
+    transition: color 0.2s ease;
   }
 
   .awareness-links a:hover {
-    color: #004f8c;
+    color: #5a1fc5; /* darker purple hover */
     text-decoration: underline;
   }
 
@@ -511,14 +511,29 @@
   }
 
   .contact-links a {
-    color: #333;
+    color: #7e3ff2; /* purple */
     text-decoration: none;
   }
 
   .contact-links a:hover {
-    color: #007acc;
+    color: #5a1fc5; /* darker hover */
     text-decoration: underline;
   }
+
+  /* Icon coloring (black/white contrast) */
+  .contact-links::before,
+  .contact-links::after {
+    color: inherit;
+  }
+
+  .contact-links a::before {
+    color: black;
+  }
+
+  /* Optional tweak if you want icons pure white (for dark background) */
+  /* .contact-links {
+    color: white;
+  } */
 </style>
 
   <footer>
