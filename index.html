@@ -479,9 +479,12 @@
 <section id="contact" class="contact">
   <h2>Contact</h2>
   <p class="contact-links">
-    <span class="icon">✍️</span> <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener">Medium</a> |
-    <span class="icon">🔗</span> <a href="https://www.linkedin.com/in/cassandra-chibueze/" target="_blank" rel="noopener">LinkedIn</a> |
-    <span class="icon">📧</span> <a href="mailto:Cassandrachibueze1@gmail.com">Email</a>
+    <span class="icon">✍️</span>
+    <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener">Medium</a> |
+    <span class="icon">🔗</span>
+    <a href="https://www.linkedin.com/in/cassandra-chibueze/" target="_blank" rel="noopener">LinkedIn</a> |
+    <span class="icon">📧</span>
+    <a href="mailto:Cassandrachibueze1@gmail.com">Email</a>
   </p>
 
   <style>
@@ -491,23 +494,24 @@
     }
 
     #contact {
-      text-align: center;
       margin-top: 4rem;
       padding-bottom: 3rem;
+      text-align: left; /* Aligns everything to the left */
     }
 
     #contact h2 {
       color: var(--header-purple);
       font-size: 1.8rem;
+      margin-left: 1rem;
     }
 
     .contact-links {
-      display: flex;
-      justify-content: center;
+      display: inline-flex; /* Keeps links inline */
       flex-wrap: wrap;
       gap: 0.5em;
       font-weight: 500;
       color: var(--header-purple);
+      margin-left: 1rem; /* Aligns with header */
     }
 
     .contact-links a {
@@ -526,7 +530,6 @@
     }
   </style>
 </section>
-
 
   <footer>
     © 2025 CassandraChi | Cybersecurity Portfolio
