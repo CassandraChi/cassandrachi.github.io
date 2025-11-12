@@ -479,6 +479,11 @@
 </section>
 
 <style>
+  /* Accent color — matches your header sections */
+  :root {
+    --accent-purple: #6C63FF; /* same shade as your section headers */
+  }
+
   /* Awareness section */
   .awareness-links {
     list-style: none;
@@ -490,14 +495,14 @@
   }
 
   .awareness-links a {
-    color: #7e3ff2; /* purple tone */
+    color: var(--accent-purple);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
   .awareness-links a:hover {
-    color: #5a1fc5; /* darker purple hover */
+    color: #5148d8; /* darker hover version */
     text-decoration: underline;
   }
 
@@ -511,29 +516,21 @@
   }
 
   .contact-links a {
-    color: #7e3ff2; /* purple */
+    color: var(--accent-purple);
     text-decoration: none;
   }
 
   .contact-links a:hover {
-    color: #5a1fc5; /* darker hover */
+    color: #5148d8;
     text-decoration: underline;
   }
 
-  /* Icon coloring (black/white contrast) */
-  .contact-links::before,
-  .contact-links::after {
-    color: inherit;
+  /* Optional: make icons black or white depending on your background */
+  .contact-links {
+    color: white; /* if dark background */
   }
 
-  .contact-links a::before {
-    color: black;
-  }
-
-  /* Optional tweak if you want icons pure white (for dark background) */
-  /* .contact-links {
-    color: white;
-  } */
+  /* If your background is light, switch this line to color: black; */
 </style>
 
   <footer>
