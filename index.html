@@ -505,45 +505,42 @@
   </p>
 
   <style>
-    :root {
-      --header-purple: #c084fc;
-      --header-purple-hover: #a16dff;
-    }
-
     #contact {
-      margin-top: 4rem;
-      padding-bottom: 3rem;
-      text-align: left; /* Aligns everything to the left */
+      padding: 2rem 10%;       /* Match other sections */
+      margin-top: 2rem;        /* Reduce excessive space */
     }
 
     #contact h2 {
-      color: var(--header-purple);
+      color: var(--light-purple);
       font-size: 1.8rem;
-      margin-left: 1rem;
+      border-bottom: 2px solid var(--purple); /* Align line with other sections */
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;      /* Space below heading */
     }
 
     .contact-links {
-      display: inline-flex; /* Keeps links inline */
+      display: flex;
       flex-wrap: wrap;
-      gap: 0.5em;
+      gap: 0.5rem;
       font-weight: 500;
-      color: var(--header-purple);
-      margin-left: 1rem; /* Aligns with header */
+      color: #fff;             /* Default white */
+      align-items: center;
     }
 
     .contact-links a {
-      color: var(--header-purple);
+      color: #fff;             /* Default white */
       text-decoration: none;
       transition: color 0.2s ease;
     }
 
     .contact-links a:hover {
-      color: var(--header-purple-hover);
+      color: var(--light-purple); /* Turns purple on hover */
       text-decoration: underline;
     }
 
     .contact-links .icon {
-      color: var(--header-purple);
+      color: #fff;             /* White icons */
+      margin-right: 0.2rem;
     }
   </style>
 </section>
