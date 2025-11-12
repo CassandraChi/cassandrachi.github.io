@@ -446,10 +446,12 @@
     </script>
   </section>
 
-<!-- CYBER AWARENESS -->
-<section id="awareness">
-  <h2>2023 Cyber Awareness Series</h2>
-  <p class="section-intro">Highlights from my 2023 cybersecurity awareness outreach and public education initiatives.</p>
+<!-- VOLUNTEERING -->
+<section id="volunteering">
+  <h2>Volunteering</h2>
+  <p class="section-intro">
+    Highlights from my 2023 cybersecurity awareness outreach and education initiatives.
+  </p>
 
   <div class="awareness-list">
     <div class="awareness-item">
@@ -476,38 +478,122 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
+<section id="contact">
   <h2>Contact</h2>
-  <p class="contact-links">
-    ✍️ <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener">Medium</a> |
-    🔗 <a href="https://www.linkedin.com/in/cassandra-chibueze/" target="_blank" rel="noopener">LinkedIn</a> |
-    📧 <a href="mailto:Cassandrachibueze1@gmail.com">Email</a>
-  </p>
+  <p class="section-intro">Let’s connect — I’m always open to collaboration and cybersecurity conversations.</p>
 
-  <style>
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      font-weight: 500;
-    }
-
-    .contact-links a {
-      color: var(--header-purple);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .contact-links a:hover {
-      color: #a16dff;
-      text-decoration: underline;
-    }
-  </style>
+  <div class="contact-links">
+    <a href="mailto:cassandrachibueze1@gmail.com" class="contact-link">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/cassandra-chibueze" target="_blank" rel="noopener" class="contact-link">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://medium.com/@cassandrachibueze1" target="_blank" rel="noopener" class="contact-link">
+      <i class="fab fa-medium"></i> Medium
+    </a>
+  </div>
 </section>
 
-  <footer>
-    © 2025 CassandraChi | Cybersecurity Portfolio
-  </footer>
-</body>
-</html>
+<style>
+:root {
+  --accent-purple: #c084fc;
+  --accent-purple-hover: #a16dff;
+}
+
+/* VOLUNTEERING SECTION */
+#volunteering {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#volunteering h2 {
+  color: var(--accent-purple);
+  font-size: 1.8rem;
+}
+
+.section-intro {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.awareness-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.awareness-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.awareness-title {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.awareness-item a {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.awareness-item a:hover {
+  color: var(--accent-purple-hover);
+  text-decoration: underline;
+}
+
+.linkedin-note {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-top: 1.5rem;
+}
+
+/* CONTACT SECTION */
+#contact {
+  text-align: center;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+#contact h2 {
+  color: var(--accent-purple);
+  font-size: 1.8rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.contact-link i {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-link:hover {
+  color: var(--accent-purple-hover);
+}
+</style>
+
