@@ -446,7 +446,7 @@
     </script>
   </section>
 
-<!-- CYBER AWARENESS -->
+<!-- CYBER AWARENESS / VOLUNTEERING -->
 <section id="awareness">
   <h2>Volunteering</h2>
   <p class="section-intro">Highlights from my 2023 cybersecurity awareness outreach and public education initiatives.</p>
@@ -473,6 +473,38 @@
   <p class="linkedin-note">
     Also shared daily insights during the <strong>30-Day Cyber Awareness Challenge</strong> on LinkedIn (October 2023).
   </p>
+
+  <style>
+    /* Remove extra spacing inside Volunteering */
+    #awareness {
+      margin: 0;           /* remove default section margin */
+      padding: 2rem 0 0 0; /* only top padding */
+    }
+
+    #awareness h2 {
+      margin-bottom: 0.5rem; /* smaller space below header */
+    }
+
+    #awareness p,
+    #awareness .awareness-list {
+      margin: 0;            /* remove bottom margin */
+      padding: 0;
+    }
+
+    .awareness-item {
+      margin: 0.3rem 0;     /* small spacing between items */
+    }
+
+    .awareness-item a {
+      color: #fff;          /* white links as you requested */
+      text-decoration: underline;
+    }
+
+    .linkedin-note {
+      margin-top: 0.5rem;   /* small spacing above note */
+      color: #fff;
+    }
+  </style>
 </section>
 
 <!-- CONTACT -->
@@ -493,25 +525,26 @@
       --header-purple-hover: #a16dff;
     }
 
-  #contact {
-  margin-top: 1.5rem; /* instead of 4rem */
-  padding-bottom: 3rem;
-  text-align: left;
-}
+    #contact {
+      margin-top: 1rem;   /* tight spacing from Volunteering */
+      padding-bottom: 3rem;
+      text-align: left;
+    }
 
     #contact h2 {
       color: var(--header-purple);
       font-size: 1.8rem;
       margin-left: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .contact-links {
-      display: inline-flex; /* Keeps links inline */
+      display: inline-flex; 
       flex-wrap: wrap;
       gap: 0.5em;
       font-weight: 500;
       color: var(--header-purple);
-      margin-left: 1rem; /* Aligns with header */
+      margin-left: 1rem;
     }
 
     .contact-links a {
